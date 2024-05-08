@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future park</title>
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script src="lib/framework/index.js" type="module"></script>
+    <script type="module">
+        import {loadContent} from "./lib/framework/index.js";
+
+        loadContent({path: './src/App.html', content: 'includeHtml'});
+    </script>
+</head>
+
+<body>
+    This is the index page
+    <div id="includeHtml"></div>
+</body>
+
+</html>
