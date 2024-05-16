@@ -1,0 +1,36 @@
+.content_container {
+    display: flex;
+}
+
+aside {
+    width: 25%;
+    /* Set width for aside */
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+aside ul li {
+    margin-bottom: 20px;
+}
+
+.main_content {
+    flex: 1;
+    /* Take up remaining space */
+    margin-left: 20px;
+    /* Add some space between aside and main content */
+}
+
+.main_content h2 {
+    text-align: center;
+}
+
+.service_content_section {
+    padding: 10px;
+    margin: 10px 0;
+}
