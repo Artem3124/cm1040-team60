@@ -9,11 +9,12 @@ aside {
     padding: 20px;
 }
 
-aside ul {
+
+/* aside ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-}
+} */
 
 aside ul li {
     margin-bottom: 20px;
