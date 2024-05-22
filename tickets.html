@@ -1,124 +1,107 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title></title>
-        <link href="css/style.css" rel="stylesheet" />
-        <script>
-            import { loadContent } from "./lib/framework/index.js";
-            loadContent({ path: "./src/nav.html", content: "nav" });
-            loadContent({ path: "./src/footer.html", content: "footer" });
-        </script>
-    </head>
-    <body>
-        <main>
-            <div id="nav"></div>
-            <div class="content_container">
-                <div class="ticket-container">
-                    <div class="ticket-card">
-                        <div class="ticket-card__name">All-Day Explorer</div>
-                        <div class="ticket-card__description">
-                            For the ultimate adventure, choose our Full-Day
-                            Unlimited Pass! With unrestricted access to all
-                            attractions and rides throughout the day, you can
-                            dive into excitement at your own pace. Whether
-                            you're a thrill-seeker or looking for
-                            family-friendly fun, this pass guarantees endless
-                            entertainment and unforgettable experiences for the
-                            whole day.
-                        </div>
-                        <div class="ticket-card__features">
-                            <ul>
-                                <li>
-                                    <h4>Full day</h4>
-                                </li>
-                                <li>
-                                    <h4>Unlimited access</h4>
-                                </li>
-                                <li>
-                                    <h4>Free food</h4>
-                                </li>
-                                <li>
-                                    <h4>Pool area access</h4>
-                                </li>
-                            </ul>
-                        </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="./assets/stylesheets/index.css" rel="stylesheet">
+    <script src="./lib/framework/index.js" type="module"></script>
+    <script type="module">
+        import {loadContent} from "./lib/framework/index.js"; loadContent({path: './src/nav.html', content: 'nav'});loadContent({path: './src/footer.html', content: 'footer'});
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id="nav"></div>
+        <div class="content_container">
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-card__name">All-Day Explorer</div>
+                    <div class="ticket-card__description">
+                        For the ultimate adventure, choose our Full-Day Unlimited Pass! With unrestricted access to all attractions and rides throughout the day, you can dive into excitement at your own pace. Whether you're a thrill-seeker or looking for family-friendly fun,
+                        this pass guarantees endless entertainment and unforgettable experiences for the whole day.
                     </div>
-                    <div class="ticket-card">
-                        <div class="ticket-card__name">
-                            Adventure Half-Day Pass
-                        </div>
-                        <div class="ticket-card__description">
-                            Get ready for an extended adventure with our 6-Hour
-                            Explorer Pass! Designed for those seeking more
-                            excitement, this pass offers access to a wider range
-                            of attractions and rides for six thrilling hours.
-                            Spend your day exploring our top-rated experiences
-                            with minimal wait times, ensuring maximum fun and
-                            memories that last a lifetime!
-                        </div>
-                        <div class="ticket-card__features">
-                            <ul>
-                                <li>
-                                    <h4>6h</h4>
-                                </li>
-                                <li>
-                                    <h4>Unlimited access</h4>
-                                </li>
-                                <li>
-                                    <h4>Free food</h4>
-                                </li>
-                                <li>
-                                    <h4>Pool area access</h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="ticket-card">
-                        <div class="ticket-card__name">Quick Fun Pass</div>
-                        <div class="ticket-card__description">
-                            Dive into excitement with our Quick Fun Pass!
-                            Perfect for visitors short on time but big on
-                            adventure, this 2-hour pass grants you access to
-                            select attractions and rides. Ideal for enjoying a
-                            taste of thrill without spending the whole day.
-                            Experience our top-rated attractions with minimal
-                            waiting and maximum fun!
-                        </div>
-                        <div class="ticket-card__features">
-                            <ul>
-                                <li>
-                                    <h4>2h</h4>
-                                </li>
-                                <li>
-                                    <h4>Unlimited access</h4>
-                                </li>
-                                <li>
-                                    <h4>Free food</h4>
-                                </li>
-                                <li>
-                                    <h4>Pool area access</h4>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="ticket-card__features">
+                        <ul>
+                            <li>
+                                <h4>Full day</h4>
+                            </li>
+                            <li>
+                                <h4>Unlimited access</h4>
+                            </li>
+                            <li>
+                                <h4>Free food</h4>
+                            </li>
+                            <li>
+                                <h4>Pool area access</h4>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="booking-container">
-                    <div class="tickets-search-bar">
-                        <div class="tickets-search-bar__title">
-                            <div class="tickets-search-bar__title__tickets">
-                                Tickets
-                            </div>
-                            <div
-                                class="tickets-search-bar__title__tickets-stay"
-                            >
-                                Stay
-                            </div>
+                <div class="ticket-card">
+                    <div class="ticket-card__name">
+                        Adventure Half-Day Pass
+                    </div>
+                    <div class="ticket-card__description">
+                        Get ready for an extended adventure with our 6-Hour Explorer Pass! Designed for those seeking more excitement, this pass offers access to a wider range of attractions and rides for six thrilling hours. Spend your day exploring our top-rated experiences
+                        with minimal wait times, ensuring maximum fun and memories that last a lifetime!
+                    </div>
+                    <div class="ticket-card__features">
+                        <ul>
+                            <li>
+                                <h4>6h</h4>
+                            </li>
+                            <li>
+                                <h4>Unlimited access</h4>
+                            </li>
+                            <li>
+                                <h4>Free food</h4>
+                            </li>
+                            <li>
+                                <h4>Pool area access</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-card__name">Quick Fun Pass</div>
+                    <div class="ticket-card__description">
+                        Dive into excitement with our Quick Fun Pass! Perfect for visitors short on time but big on adventure, this 2-hour pass grants you access to select attractions and rides. Ideal for enjoying a taste of thrill without spending the whole day. Experience
+                        our top-rated attractions with minimal waiting and maximum fun!
+                    </div>
+                    <div class="ticket-card__features">
+                        <ul>
+                            <li>
+                                <h4>2h</h4>
+                            </li>
+                            <li>
+                                <h4>Unlimited access</h4>
+                            </li>
+                            <li>
+                                <h4>Free food</h4>
+                            </li>
+                            <li>
+                                <h4>Pool area access</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-container">
+                <div class="tickets-search-bar">
+                    <div class="tickets-search-bar__title">
+                        <div class="tickets-search-bar__title__tickets">
+                            Tickets
                         </div>
-                        <div class="tickets-search-bar__input">
-                            <div class="tickets-search-bar__input__type">
-                                <select>
+                        <div class="tickets-search-bar__title__tickets-stay">
+                            Stay
+                        </div>
+                    </div>
+                    <div class="tickets-search-bar__input">
+                        <div class="tickets-search-bar__input__type">
+                            <select>
                                     <option value="all-day-explorer">
                                         All-Day Explorer
                                     </option>
@@ -129,94 +112,61 @@
                                         Quick Fun Pass
                                     </option>
                                 </select>
-                            </div>
-                            <div class="tickets-search-bar__input__date">
-                                <input
-                                    type="date"
-                                    placeholder="Search for tickets"
-                                />
-                            </div>
-                            <div class="tickets-search-bar__submit-btn">
-                                <button type="submit">
+                        </div>
+                        <div class="tickets-search-bar__input__date">
+                            <input type="date" placeholder="Search for tickets" />
+                        </div>
+                        <div class="tickets-search-bar__submit-btn">
+                            <button type="submit">
                                     Check availability
                                 </button>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="tickets-information-container">
-                    <div class="tickets-information-container__header">
-                        <h2>Tickets Information</h2>
-                    </div>
-                    <div class="tickets-information-container__content">
-                        <h3>Purchase and Validity:</h3>
-                        <p>
-                            Tickets can be purchased online through our official
-                            Galactic Gateway or at any of the portal stations
-                            located at the entrance of the park. Tickets must be
-                            used on the date specified at the time of purchase
-                            and are non-transferable. Please ensure your travel
-                            dates align with your ticket usage to avoid any
-                            time-space discrepancies.
-                        </p>
-                        <h3>Cancellation and Refund Policy:</h3>
-                        <p>
-                            We understand that even the best-laid plans of
-                            interstellar adventurers can go awry. If you need to
-                            cancel your expedition, full refunds are available
-                            for tickets canceled at least 72 hours before the
-                            designated entry time. Cancellations made less than
-                            72 hours before your journey's commencement will be
-                            subject to a 50% cancellation fee. Unfortunately,
-                            any cancellations made on the day of arrival cannot
-                            be refunded.
-                        </p>
-                        <h3>Weather and Galactic Conditions:</h3>
-                        <p>
-                            Our park is open come rain or meteor showers!
-                            However, in the rare event of a severe galactic
-                            storm or other adverse cosmic events, the park may
-                            close for the safety of our visitors and crew. In
-                            such cases, visitors will be offered a full refund
-                            or the option to reschedule their visit to a clearer
-                            day.
-                        </p>
-                        <h3>Entry Requirements:</h3>
-                        <p>
-                            All space travellers must present a valid ID galaxy
-                            pass and their ticket at the entry gate. Digital and
-                            printed tickets are accepted. Ensure that your
-                            travel documents are in order as we cannot permit
-                            entry to those without proper identification.
-                        </p>
-                        <h3>Park Conduct:</h3>
-                        <p>
-                            We strive to offer a safe and enjoyable environment
-                            for all our visitors. Please follow all posted
-                            guidelines and instructions from park operatives.
-                            Anti-gravity antics, while fun, should be kept
-                            within the safe zones marked around the park.
-                        </p>
-                        <h3>Special Offers and Promotions:</h3>
-                        <p>
-                            Keep an eye on our transmission updates via our
-                            official comms channels. We often broadcast special
-                            rates and last-minute deals for those looking to
-                            escape at warp speed on a budget.
-                        </p>
-                        <h3>Accessibility:</h3>
-                        <p>
-                            Our park is fully accessible to beings from all
-                            planets and dimensions. Should you require special
-                            assistance, please contact our Galactic Support Team
-                            before your visit.
-                        </p>
-                    </div>
+            <div class="tickets-information-container">
+                <div class="tickets-information-container__header">
+                    <h2>Tickets Information</h2>
+                </div>
+                <div class="tickets-information-container__content">
+                    <h3>Purchase and Validity:</h3>
+                    <p>
+                        Tickets can be purchased online through our official Galactic Gateway or at any of the portal stations located at the entrance of the park. Tickets must be used on the date specified at the time of purchase and are non-transferable. Please ensure your
+                        travel dates align with your ticket usage to avoid any time-space discrepancies.
+                    </p>
+                    <h3>Cancellation and Refund Policy:</h3>
+                    <p>
+                        We understand that even the best-laid plans of interstellar adventurers can go awry. If you need to cancel your expedition, full refunds are available for tickets canceled at least 72 hours before the designated entry time. Cancellations made less than
+                        72 hours before your journey's commencement will be subject to a 50% cancellation fee. Unfortunately, any cancellations made on the day of arrival cannot be refunded.
+                    </p>
+                    <h3>Weather and Galactic Conditions:</h3>
+                    <p>
+                        Our park is open come rain or meteor showers! However, in the rare event of a severe galactic storm or other adverse cosmic events, the park may close for the safety of our visitors and crew. In such cases, visitors will be offered a full refund or the
+                        option to reschedule their visit to a clearer day.
+                    </p>
+                    <h3>Entry Requirements:</h3>
+                    <p>
+                        All space travellers must present a valid ID galaxy pass and their ticket at the entry gate. Digital and printed tickets are accepted. Ensure that your travel documents are in order as we cannot permit entry to those without proper identification.
+                    </p>
+                    <h3>Park Conduct:</h3>
+                    <p>
+                        We strive to offer a safe and enjoyable environment for all our visitors. Please follow all posted guidelines and instructions from park operatives. Anti-gravity antics, while fun, should be kept within the safe zones marked around the park.
+                    </p>
+                    <h3>Special Offers and Promotions:</h3>
+                    <p>
+                        Keep an eye on our transmission updates via our official comms channels. We often broadcast special rates and last-minute deals for those looking to escape at warp speed on a budget.
+                    </p>
+                    <h3>Accessibility:</h3>
+                    <p>
+                        Our park is fully accessible to beings from all planets and dimensions. Should you require special assistance, please contact our Galactic Support Team before your visit.
+                    </p>
                 </div>
             </div>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
 
-    <div id="footer"></div>
+<div id="footer"></div>
+
 </html>
