@@ -1,0 +1,88 @@
+.container {
+    background-color: #EAE8F7;
+    padding: 25px 0;
+}
+
+.content_container {
+    display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.service_box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 24px;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+}
+
+aside h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+aside ul li {
+    margin-bottom: 20px;
+    color: rgba(112, 128, 144, 1);
+    text-decoration: underline;
+}
+
+.main_content {
+    flex: 1;
+    /* Take up remaining space */
+    margin-left: 20px;
+    /* Add some space between aside and main content */
+}
+
+img {
+    max-width: 100%;
+    flex-shrink: 1;
+    /* height: 20px; */
+}
+
+.service_content_section {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inner_service_content_section {
+    /* flex-grow: 3; */
+}
+
+.inner_service_content_section h3 {
+    padding-bottom: 10px;
+    color: black;
+}
+
+.inner_service_content_section {
+    color: rgba(112, 128, 144, 1);
+}
+
+.inner_service_content_section h5 {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .content_container {
+        flex-direction: column;
+    }
+    .main_content {
+        margin-left: 0;
+        margin-top: 20px;
+        /* Add some space between stacked items */
+    }
+    aside {
+        width: 100%;
+    }
+    .service_content_section {
+        flex-direction: column;
+    }
+}
