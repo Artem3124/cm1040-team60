@@ -2,10 +2,12 @@ nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
 }
 
 .navigation_links {
-    width: 50%;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -21,4 +23,36 @@ nav {
 
 .navigation_links a {
     text-decoration: none;
+}
+
+.burger_menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger_menu {
+        display: block;
+        cursor: pointer;
+        font-size: 4rem;
+        color: purple;
+    }
+    .navigation_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #EAE8F7;
+        padding: 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+    }
+    .navigation_links.show {
+        display: flex;
+        max-height: 30vh;
+        pointer-events: auto;
+        transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+    }
 }

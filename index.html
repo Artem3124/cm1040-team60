@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Future park</title>
 
-        <!-- import fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Future park</title>
 
-        <!-- import styling -->
-        <link href="assets/stylesheets/index.css" rel="stylesheet" />
+    <!-- import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet" />
 
-        <script src="lib/framework/index.js" type="module"></script>
-        <script type="module">
-            import { loadContent } from "./lib/framework/index.js";
-            loadContent({ path: "./src/nav.html", content: "nav" });
-            loadContent({ path: "./src/footer.html", content: "footer" });
-        </script>
-    </head>
+    <!-- import styling -->
+    <link href="assets/stylesheets/index.css" rel="stylesheet" />
 
-    <body>
-        <main>
-            <div id="nav"></div>
-        </main>
-    </body>
+    <script src="./lib/nav.js"></script>
+    <script src="lib/framework/index.js" type="module"></script>
+    <script type="module">
+        import { loadContent } from "./lib/framework/index.js"; loadContent({ path: "./src/nav.html", content: "nav" }); loadContent({ path: "./src/footer.html", content: "footer" });
+    </script>
+</head>
 
-    <div id="footer"></div>
+<body>
+    <main>
+        <div id="nav"></div>
+    </main>
+</body>
+
+<div id="footer"></div>
+
 </html>
