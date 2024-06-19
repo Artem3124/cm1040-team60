@@ -1,7 +1,8 @@
 nav {
-    padding: 20px;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #1B03A3;
 }
 
 .navigation_links {
