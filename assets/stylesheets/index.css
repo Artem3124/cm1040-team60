@@ -1,13 +1,15 @@
 @import url('./nav.css');
 @import url('./footer.css');
 @import url('./service.css');
+@import url('./font.css');
+
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
-    font-family: "RobotoMono", sans-serif;
+    font-family: "K2D", sans-serif;
 }
 
 body {

@@ -1,0 +1,203 @@
+.body-container {
+    background-color: #eae8f7;
+}
+
+.ticket-container-bg {
+    background: url("/assets/images/tickets-container-bg.png") no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    background-position: center -30vh;
+}
+
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(37em, 1fr));
+    gap: 5em;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    max-width: 140em;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.ticket-container .header {
+    text-align: center;
+    padding: 2em;
+    color: white;
+}
+
+.ticket-card {
+    max-width: 40em;
+    font-size: 1em;
+    color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 10px 30px 0 #2b1354;
+    overflow-y: hidden;
+}
+
+.ticket-card .name {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+
+.ticket-card .description {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+
+.ticket-card .features ul li {
+    font-size: 1.4em;
+}
+
+.all-day {
+    background: linear-gradient(rgba(27, 3, 163, 0.3), rgba(27, 3, 163, 0.3)),
+        url("/assets/images/card-image1.png");
+    background-size: cover;
+}
+
+.six-hours {
+    background: linear-gradient(rgba(27, 3, 163, 0.3), rgba(27, 3, 163, 0.3)),
+        url("/assets/images/card-image2.png");
+    background-size: cover;
+}
+
+.two-hours {
+    background: linear-gradient(rgba(27, 3, 163, 0.3), rgba(27, 3, 163, 0.3)),
+        url("/assets/images/card-image3.png");
+    background-size: cover;
+}
+
+.ticket-card .booking {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ticket-card .booking .btn {
+    width: fit-content;
+    padding: 0;
+    font-size: 2em;
+}
+
+.booking-container {
+    margin-top: 20px;
+    background: linear-gradient(rgba(27, 3, 163, 0.3), rgba(27, 3, 163, 0.3)),
+        url("/assets/images/tickets-booking-bg.png");
+    background-size: cover;
+    background-position: top;
+    display: grid;
+    justify-content: center;
+    padding: 8em 0;
+    margin-top: 8em;
+}
+
+.booking-container .tickets-search-bar {
+    border-radius: 10px;
+    color: #1b03a3;
+    width: fit-content;
+}
+
+.booking-container .tickets-search-bar .title {
+    display: flex;
+}
+
+.title-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 10px 10px 0 0;
+}
+
+.booking-container .tickets-search-bar .input {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: 0 10px 10px 10px;
+}
+
+.disabled {
+    border-radius: 10px;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.booking-container .tickets-search-bar .input .date input[type="date"] {
+    border: none;
+    background-color: transparent;
+    color: #1b03a3;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.booking-container .tickets-search-bar .input .type select {
+    border: none;
+    background-color: transparent;
+    color: #1b03a3;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.booking-container .tickets-search-bar .submit-btn button {
+    background-color: #1b03a3;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.booking-container .booking-title {
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.tickets-information-container {
+    background-color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin: 3em 10em;
+    padding: 4em;
+    color: black;
+}
+
+.tickets-information-container .content {
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    font-size: 1em;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.tickets-information-container .content p {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+}
+
+.tickets-information-container .content h3 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
