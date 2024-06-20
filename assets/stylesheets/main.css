@@ -83,7 +83,7 @@
     .content
     .attraction-container
     .attraction-grid {
-    display: grid;
+display: grid;
     grid-template-columns: repeat(auto-fill, minmax(37em, 1fr));
     gap: 5em;
     margin: 0 auto;
@@ -92,6 +92,7 @@
     max-width: 140em;
     border-radius: 10px;
     justify-items: center;
+    align-items: center;
 }
 
 .main-page-container
@@ -104,6 +105,7 @@
     border-radius: 10px;
     font-size: 3em;
     color: white;
+    height: max-content;
     border-radius: 10px;
     overflow-y: hidden;
 }
