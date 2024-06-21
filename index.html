@@ -1,30 +1,194 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Future park</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Future park</title>
 
-    <!-- import fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet" />
-    <!-- import styling -->
-    <link href="assets/stylesheets/index.css" rel="stylesheet" />
+        <!-- import fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
+        <!-- import styling -->
+        <link href="assets/stylesheets/index.css" rel="stylesheet" />
+        <link href="assets/stylesheets/main.css" rel="stylesheet" />
 
-    <script src="./lib/nav.js"></script>
-    <script src="lib/framework/index.js" type="module"></script>
-    <script type="module">
-        import { loadContent } from "./lib/framework/index.js"; loadContent({ path: "./src/nav.html", content: "nav" }); loadContent({ path: "./src/footer.html", content: "footer" });
-    </script>
-</head>
+        <script src="./lib/nav.js"></script>
+        <script src="lib/framework/index.js" type="module"></script>
+        <script type="module">
+            import { loadContent } from "./lib/framework/index.js";
+            loadContent({ path: "./src/nav.html", content: "nav" });
+            loadContent({ path: "./src/footer.html", content: "footer" });
+        </script>
+    </head>
 
-<body>
-    <main>
-        <div id="nav"></div>
-    </main>
-</body>
+    <body>
+        <main>
+            <div id="nav"></div>
+            <div class="main-page-container">
+                <div class="booking-section">
+                    <div class="header">City of the Future</div>
+                    <div class="description">
+                        Are you ready for an incredible action?
+                    </div>
+                    <div class="booking-container">
+                        <div class="tickets-search-bar">
+                            <div class="title">
+                                <div class="title-item">Tickets</div>
+                                <div class="title-item disabled">Stay</div>
+                            </div>
+                            <div class="input">
+                                <div class="input type">
+                                    <select>
+                                        <option value="all-day-explorer">
+                                            All-Day Explorer
+                                        </option>
+                                        <option value="adventure-half-day-pass">
+                                            Adventure Half-Day Pass
+                                        </option>
+                                        <option value="quick-fun-pass">
+                                            Quick Fun Pass
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="input date">
+                                    <input
+                                        type="date"
+                                        placeholder="Search for tickets"
+                                    />
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit">
+                                        Check availability
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div id="footer"></div>
+                <div class="attractions-bg"></div>
+                <div class="attractions">
+                    <div class="header">
+                        <div class="title">Explore attractions</div>
+                        <object
+                            class="arrow"
+                            data="assets/svgs/arrow-attraction-main.svg"
+                        ></object>
+                    </div>
+                    <div class="content">
+                        <div class="attraction-container">
+                            <div class="attraction-grid">
+                                <div class="attraction-card">
+                                    <div class="description roller">
+                                        Consider to try our famous rollercoaster
+                                    </div>
+                                    <div class="name">
+                                        Rollercoaster XF-11000
+                                    </div>
+                                </div>
+                                <div class="attraction-card">
+                                    <div class="description flat">
+                                        Consider to try our famous flat rides
+                                    </div>
+                                    <div class="name">Flat rides HGF-4000</div>
+                                </div>
+                                <div class="attraction-card">
+                                    <div class="description explore">
+                                        Explore breathtaking action with wide
+                                        range of attractions.
+                                    </div>
+                                    <div class="name">Take a close look</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="tickets-container-bg"></div>
+                <div class="tickets-container">
+                    <div class="ticket-grid">
+                        <div class="ticket-card all-day">
+                            <div class="name">All-Day Explorer</div>
+                            <div class="description">
+                                For the ultimate adventure, choose our Full-Day
+                                Unlimited Pass! With unrestricted access to all
+                                attractions and rides throughout the day, you
+                                can dive into excitement at your own pace.
+                                Whether you're a thrill-seeker or looking for
+                                family-friendly fun, this pass guarantees
+                                endless entertainment and unforgettable
+                                experiences for the whole day.
+                            </div>
+                            <div class="features">
+                                <ul>
+                                    <li class="">Full day</li>
+                                    <li>Unlimited access</li>
+                                    <li>Free food</li>
+                                    <li>Pool area access</li>
+                                </ul>
+                            </div>
+                            <div class="booking">
+                                <div class="btn">Book now</div>
+                                <object data="assets/svgs/arrow.svg"></object>
+                            </div>
+                        </div>
+                        <div class="ticket-card six-hours">
+                            <div class="name">Adventure Half-Day Pass</div>
+                            <div class="description">
+                                Get ready for an extended adventure with our
+                                6-Hour Explorer Pass! Designed for those seeking
+                                more excitement, this pass offers access to a
+                                wider range of attractions and rides for six
+                                thrilling hours. Spend your day exploring our
+                                top-rated experiences with minimal wait times,
+                                ensuring maximum fun and memories that last a
+                                lifetime!
+                            </div>
+                            <div class="features">
+                                <ul>
+                                    <li>6h</li>
+                                    <li>Unlimited access</li>
+                                    <li>Free food</li>
+                                    <li>Pool area access</li>
+                                </ul>
+                            </div>
+                            <div class="booking">
+                                <div class="btn">Book now</div>
+                                <object data="assets/svgs/arrow.svg"></object>
+                            </div>
+                        </div>
+                        <div class="ticket-card two-hours">
+                            <div class="name">Quick Fun Pass</div>
+                            <div class="description">
+                                Dive into excitement with our Quick Fun Pass!
+                                Perfect for visitors short on time but big on
+                                adventure, this 2-hour pass grants you access to
+                                select attractions and rides. Ideal for enjoying
+                                a taste of thrill without spending the whole
+                                day. Experience our top-rated attractions with
+                                minimal waiting and maximum fun!
+                            </div>
+                            <div class="features">
+                                <ul>
+                                    <li>2h</li>
+                                    <li>Unlimited access</li>
+                                    <li>Free food</li>
+                                    <li>Pool area access</li>
+                                </ul>
+                            </div>
+                            <div class="booking">
+                                <div class="btn">Book now</div>
+                                <object data="assets/svgs/arrow.svg"></object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </main>
+    </body>
 </html>

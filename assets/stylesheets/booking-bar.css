@@ -1,0 +1,62 @@
+.booking-container .tickets-search-bar {
+    border-radius: 10px;
+    color: #1b03a3;
+    width: fit-content;
+}
+
+.booking-container .tickets-search-bar .title {
+    display: flex;
+}
+
+.title-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 10px 10px 0 0;
+}
+
+.booking-container .tickets-search-bar .input {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-radius: 0 10px 10px 10px;
+}
+
+.disabled {
+    border-radius: 10px;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.booking-container .tickets-search-bar .input .date input[type="date"] {
+    border: none;
+    background-color: transparent;
+    color: #1b03a3;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.booking-container .tickets-search-bar .input .type select {
+    border: none;
+    background-color: transparent;
+    color: #1b03a3;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.booking-container .tickets-search-bar .submit-btn button {
+    background-color: #1b03a3;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
