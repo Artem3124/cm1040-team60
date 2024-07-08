@@ -51,4 +51,9 @@ Install [live-server](https://www.npmjs.com/package/live-server) via [npm](https
 live-server .
 ```
 
+## Coursera static web page link
+```bash
+https://hub.labs.coursera.org:443/connect/sharedqbvmddei?forceRefresh=false&path=%2F&isLabVersioning=trueindex.html
+```
+
 
