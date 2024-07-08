@@ -8,6 +8,7 @@ Team project for Web development subject | University of London
 - [Get Started](#get-started)
   - [VS Code](#vs-code)
   - [Terminal](#terminal)
+  - [Coursera web link](#coursera-static-web-page-link)
 
 # Introduction
 ## Team Members 
